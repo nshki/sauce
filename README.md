@@ -1,5 +1,4 @@
-sauce
-=====
+![Sauce](source/images/sauce.png?raw=true)
 
 ## Overview
 
