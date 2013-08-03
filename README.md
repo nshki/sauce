@@ -84,7 +84,7 @@ default `index.haml` begins with the following lines:
     ---
     title:   Welcome to Sauce
     layout:  main
-    classes: .home
+    classes: home
     ---
 
 `title` gets translated directly to the `<title>` tag in the layout, `layout` selects
