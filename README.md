@@ -129,3 +129,12 @@ Example:
 
 This keeps the organization of scripts cleaner and easier to maintain without clobbering
 the global namespace.
+
+
+## Publishing to gh-pages
+
+Sauce includes [middleman-gh-pages](https://github.com/neo/middleman-gh-pages). If not using
+a custom CNAME, uncomment the relevant lines in `config.rb` before publishing.
+
+    # Publish a build to the gh-pages branch on GitHub
+    bundle exec rake publish
