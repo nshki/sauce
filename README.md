@@ -75,6 +75,7 @@ classes, jQuery (official CDN), LiveReload, and pretty URLs.
     |_ config.rb                   # Middleman configuration
     |_ Gemfile                     # Dependencies
     |_ Gemfile.lock                # Last verified dependencies
+    |_ Rakefile                    # Rake tasks
     |_ README.md                   # This README
 
 
