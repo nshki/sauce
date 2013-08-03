@@ -7,7 +7,7 @@ and DRY file structure. Comes ready with IE conditional classes, HTML5Shiv, body
 classes, jQuery (official CDN), LiveReload, and pretty URLs.
 
 
-## Installation / Updating
+## Installing / Updating
 
     # Clone the repo as a Middleman template
     git clone git@github.com:nikiliu/sauce.git ~/.middleman/sauce
@@ -22,7 +22,7 @@ classes, jQuery (official CDN), LiveReload, and pretty URLs.
     middleman init [my_project] --template=sauce
 
     # Optionally remove default README and Git repository
-    rm -rf README .git/
+    cd ~/.middleman/sauce/; rm -rf README .git/
 
     # Fire up a local development server (LiveReload equipped)
     bundle exec middleman server
@@ -39,7 +39,7 @@ classes, jQuery (official CDN), LiveReload, and pretty URLs.
     |  |
     |  |_ javascripts/
     |  |  |_ shared/
-    |  |  |  |_ _elements.coffee   # "Module" containing reusable selectors
+    |  |  |  |_ _elements.coffee   # "Module" containing reusable elements
     |  |  |  |_ _helpers.coffee    # "Module" containing helper functions
     |  |  |
     |  |  |_ _main.coffee          # Main JavaScript functionality
@@ -88,8 +88,8 @@ default `index.haml` begins with the following lines:
     ---
 
 `title` gets translated directly to the `<title>` tag in the layout, `layout` selects
-which layout to use for the page, and `classes` is a list of classes the `<body>` tag
-will have.
+which layout to use for the page, and `classes` is a list of classes, separated by a
+space, the `<body>` tag will have.
 
 Sauce utilizes Middleman's pretty URL plugin, which will convert every new page file to
 have its own pretty URL. Example: `newpage.haml` can be seen at `/newpage`.
