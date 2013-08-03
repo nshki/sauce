@@ -42,6 +42,8 @@ classes, jQuery (official CDN), LiveReload, and pretty URLs.
     |  |  |  |_ _elements.coffee   # "Module" containing reusable elements
     |  |  |  |_ _helpers.coffee    # "Module" containing helper functions
     |  |  |
+    |  |  |_ vendor/               # For any third-party plugins
+    |  |  |
     |  |  |_ _main.coffee          # Main JavaScript functionality
     |  |  |_ application.coffee    # Imports all scripts
     |  |
