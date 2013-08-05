@@ -55,18 +55,18 @@ classes, jQuery (official CDN), LiveReload, and pretty URLs.
     |  |
     |  |_ stylesheets/
     |  |  |_ shared/
-    |  |  |  |_ _colors.sass       # Color definitions
-    |  |  |  |_ _fonts.sass        # Font definitions
-    |  |  |  |_ _ie.sass           # IE styles
-    |  |  |  |_ _media.sass        # Media queries
-    |  |  |  |_ _mixins.sass       # Custom mixins
-    |  |  |  |_ _variables.sass    # General variables
+    |  |  |  |_ _colors.scss       # Color definitions
+    |  |  |  |_ _fonts.scss        # Font definitions
+    |  |  |  |_ _ie.scss           # IE styles
+    |  |  |  |_ _media.scss        # Media queries
+    |  |  |  |_ _mixins.scss       # Custom mixins
+    |  |  |  |_ _variables.scss    # General variables
     |  |  |
     |  |  |_ vendor/
     |  |  |  |_ normalize.css      # Normalize v2.1.2
     |  |  |
-    |  |  |_ _main.sass            # Main app styles
-    |  |  |_ application.sass      # Imports Compass and all stylesheets
+    |  |  |_ _main.scss            # Main app styles
+    |  |  |_ application.scss      # Imports Compass and all stylesheets
     |  |
     |  |_ favicon.ico              # Sauce favicon
     |  |_ index.html               # Homepage
