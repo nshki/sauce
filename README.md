@@ -106,7 +106,7 @@ insertion of anonymous function wrappers by the compiler.
 
 To get around this problem, Sauce defines external "modules" as window-level classes.
 By defining properties and methods using the `@` character, they become class-level,
-globally accessible, namespaced entities.
+making them accessible in a `ClassName.property` format in other files.
 
 Example:
 
@@ -128,8 +128,7 @@ Example:
     ---
     Helpers.mymethod()   # Prints "Hello World!"
 
-This keeps the organization of scripts cleaner and easier to maintain without clobbering
-the global namespace.
+This keeps the organization of scripts cleaner and easier to maintain.
 
 
 ## Publishing to gh-pages
