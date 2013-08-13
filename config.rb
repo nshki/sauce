@@ -2,13 +2,15 @@
 # Configuration
 #------------------------------------------------------------------------
 
+# LiveReload and pretty URLs
 activate :livereload
 activate :directory_indexes
 
-# Correct asset links on gh-pages
-# activate :relative_assets
-# set :relative_links, true
+# Use relative paths
+activate :relative_assets
+set :relative_links, true
 
+# Asset paths
 set :css_dir,    'stylesheets'
 set :js_dir,     'javascripts'
 set :images_dir, 'images'
