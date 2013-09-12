@@ -3,7 +3,5 @@
 #------------------------------------------------------------------------
 
 #= require_tree ./vendor
-
-#= require ./shared/_elements
-#= require ./shared/_helpers
-#= require ./_main
+#= require_tree ./shared
+#= require      ./_main

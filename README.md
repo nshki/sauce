@@ -38,10 +38,7 @@ classes, jQuery (official CDN), LiveReload, and pretty URLs.
     |  |  |_ sauce.png             # Sauce logo
     |  |
     |  |_ javascripts/
-    |  |  |_ shared/
-    |  |  |  |_ _elements.coffee   # "Module" containing reusable elements
-    |  |  |  |_ _helpers.coffee    # "Module" containing helper functions
-    |  |  |
+    |  |  |_ shared/               # For any CoffeeScript classes, etc.
     |  |  |_ vendor/               # For any third-party plugins
     |  |  |
     |  |  |_ _main.coffee          # Main JavaScript functionality
@@ -96,39 +93,6 @@ space, the `<body>` tag will have.
 
 Sauce utilizes Middleman's pretty URL plugin, which will convert every new page file to
 have its own pretty URL. Example: `newpage.haml` can be seen at `/newpage`.
-
-
-## CoffeeScript "Modules"
-
-CoffeeScript does not support Ruby-esque modules out of the box. Furthermore, writing
-code to be reused across multiple `.coffee` files fails because of the automatic
-insertion of anonymous function wrappers by the compiler.
-
-To get around this problem, Sauce defines external "modules" as window-level classes.
-By defining properties and methods using the `@` character, they become class-level,
-making them accessible in a `ClassName.property` format in other files.
-
-Example:
-
-    ---
-    _elements.coffee
-    ---
-    class window.Elements
-      @myelement: "Hello World!"
-
-    ---
-    _helpers.coffee
-    ---
-    class window.Helpers
-      @mymethod: () ->
-        console.log Elements.myelement
-
-    ---
-    _main.coffee
-    ---
-    Helpers.mymethod()   # Prints "Hello World!"
-
-This keeps the organization of scripts cleaner and easier to maintain.
 
 
 ## Publishing to gh-pages
