@@ -66,7 +66,7 @@ classes, jQuery (official CDN), LiveReload, and pretty URLs.
     |  |  |_ application.scss      # Imports Compass and all stylesheets
     |  |
     |  |_ favicon.ico              # Sauce favicon
-    |  |_ index.html               # Homepage
+    |  |_ index.haml               # Homepage
     |
     |_ .gitignore                  # Git ignore
     |_ config.rb                   # Middleman configuration
