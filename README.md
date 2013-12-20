@@ -2,9 +2,9 @@
 
 ## Overview
 
-[Middleman](http://middlemanapp.com/) template with Haml, Compass, CoffeeScript,
-and DRY file structure. Comes ready with IE conditional classes, HTML5Shiv, body
-classes, jQuery (official CDN), LiveReload, and pretty URLs.
+[Middleman](http://middlemanapp.com/) template with Haml, Compass, and CoffeeScript.
+Comes ready with IE conditional classes, HTML5Shiv, body classes, jQuery (official
+CDN), LiveReload, and pretty URLs.
 
 
 ## Installing / Updating
@@ -60,7 +60,7 @@ classes, jQuery (official CDN), LiveReload, and pretty URLs.
     |  |  |  |_ _variables.scss    # General variables
     |  |  |
     |  |  |_ vendor/
-    |  |  |  |_ normalize.css      # Normalize v2.1.2
+    |  |  |  |_ normalize.css      # Normalize
     |  |  |
     |  |  |_ _main.scss            # Main app styles
     |  |  |_ application.scss      # Imports Compass and all stylesheets
