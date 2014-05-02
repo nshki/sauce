@@ -2,9 +2,9 @@
 
 ## Overview
 
-[Middleman](http://middlemanapp.com/) template with Haml, Compass, and CoffeeScript.
-Comes ready with IE conditional classes, HTML5Shiv, body classes, jQuery (official
-CDN), LiveReload, and pretty URLs.
+[Middleman](http://middlemanapp.com/) template with Haml, Compass, and
+CoffeeScript. Comes ready with IE conditional classes, HTML5Shiv, body classes,
+jQuery (official CDN), LiveReload, and pretty URLs.
 
 
 ## Installing / Updating
@@ -38,67 +38,44 @@ CDN), LiveReload, and pretty URLs.
     |  |  |_ sauce.png             # Sauce logo
     |  |
     |  |_ javascripts/
-    |  |  |_ shared/               # For any CoffeeScript classes, etc.
+    |  |  |_ modules/              # Individual JavaScript modules
     |  |  |_ vendor/               # For any third-party plugins
     |  |  |
-    |  |  |_ _main.coffee          # Main JavaScript functionality
-    |  |  |_ application.coffee    # Imports all scripts
+    |  |  |_ application.coffee    # Manifest file
     |  |
     |  |_ layouts/
-    |  |  |_ _doctype.haml         # Partial containing DOCTYPE and IE conditional classes
-    |  |  |_ _icons.haml           # Partial containing application icons
-    |  |  |_ _meta.haml            # Partial containing meta tags
-    |  |  |_ main.haml             # Main layout
+    |  |  |_ _doctype.haml         # DOCTYPE markup
+    |  |  |_ _meta.haml            # Meta tags
+    |  |  |_ _icons.haml           # Icon includes
+    |  |  |_ application.haml      # Main layout
     |  |
     |  |_ stylesheets/
-    |  |  |_ shared/
-    |  |  |  |_ _colors.scss       # Color definitions
-    |  |  |  |_ _fonts.scss        # Font definitions
-    |  |  |  |_ _ie.scss           # IE styles
-    |  |  |  |_ _media.scss        # Media queries
-    |  |  |  |_ _mixins.scss       # Custom mixins
-    |  |  |  |_ _variables.scss    # General variables
+    |  |  |_ components/           # Individual Sass components
+    |  |  |_ config/
+    |  |  |  |_ _colors.scss       # Color config
+    |  |  |  |_ _typography.scss   # Typography config
+    |  |  |  |_ _general.scss      # General config
+    |  |  |  |_ _media.scss        # Media query config
     |  |  |
     |  |  |_ vendor/
     |  |  |  |_ normalize.css      # Normalize
     |  |  |
-    |  |  |_ _main.scss            # Main app styles
-    |  |  |_ application.scss      # Imports Compass and all stylesheets
+    |  |  |_ application.scss      # Manifest file
     |  |
     |  |_ favicon.ico              # Sauce favicon
-    |  |_ index.haml               # Homepage
+    |  |_ index.haml               # Default page
     |
     |_ .gitignore                  # Git ignore
-    |_ config.rb                   # Middleman configuration
+    |_ config.rb                   # Middleman config
     |_ Gemfile                     # Dependencies
     |_ Gemfile.lock                # Last verified dependencies
     |_ Rakefile                    # Rake tasks
     |_ README.md                   # This README
 
 
-## Adding New Pages
-
-To create a new page, simply create a new `.haml` file in the `source/` directory. The
-default `index.haml` begins with the following lines:
-
-    ---
-    title:   Welcome to Sauce
-    layout:  main
-    classes: home
-    ---
-
-`title` gets translated directly to the `<title>` tag in the layout, `layout` selects
-which layout to use for the page, and `classes` is a list of classes, separated by a
-space, the `<body>` tag will have.
-
-Sauce utilizes Middleman's pretty URL plugin, which will convert every new page file to
-have its own pretty URL. Example: `newpage.haml` can be seen at `/newpage`.
-
-
 ## Publishing to gh-pages
 
-Sauce includes [middleman-gh-pages](https://github.com/neo/middleman-gh-pages). If not using
-a custom CNAME, uncomment the relevant lines in `config.rb` before publishing.
+Sauce includes [middleman-gh-pages](https://github.com/neo/middleman-gh-pages).
 
     # Publish a build to the gh-pages branch on GitHub
     bundle exec rake publish

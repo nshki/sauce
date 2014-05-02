@@ -5,7 +5,7 @@
   = partial "layouts/meta"
 
   -# Page title
-  %title= current_page.data.title
+  %title= page_title("My Site")
 
   -# Stylesheets
   = stylesheet_link_tag "application"
@@ -16,7 +16,7 @@
   -# HTML5Shiv
   <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-%body{ class: current_page.data.classes || "" }
+%body{ class: page_classes }
   = yield
 
   -# JavaScripts
@@ -25,4 +25,3 @@
 
 -# Need this to close the doctype partial
 </html>
-

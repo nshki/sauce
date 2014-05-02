@@ -1,16 +1,19 @@
-//------------------------------------------------------------------------
-// Application
-//------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+// application.scss
+//
+// Manifest file for stylesheets.
+//------------------------------------------------------------------------------
 
 //= require_tree ./vendor
 
 @import "compass";
 
-@import "shared/colors";
-@import "shared/fonts";
-@import "shared/variables";
-@import "shared/mixins";
-@import "shared/media";
-@import "shared/ie";
+@import "config/colors";
+@import "config/typography";
+@import "config/general";
+@import "config/media";
 
-@import "main";
+@import "components/sauce";
+
+@import "legacy/ie8";
+@import "legacy/ie7";
