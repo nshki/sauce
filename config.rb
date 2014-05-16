@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------
-# Configuration
+# config.rb
 #------------------------------------------------------------------------
 
 # LiveReload and pretty URLs
@@ -17,6 +17,9 @@ page "/*", layout: "application"
 set :css_dir,    "stylesheets"
 set :js_dir,     "javascripts"
 set :images_dir, "images"
+
+# Haml config
+set :haml, { :attr_wrapper => '"' }
 
 # Build config
 configure :build do
@@ -40,5 +43,5 @@ helpers do
       default_title
     end
   end
-  
+
 end
