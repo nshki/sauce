@@ -1,22 +1,24 @@
-//------------------------------------------------------------------------------
+//==============================================================================
 // _sauce.scss
 //
-// Example Sauce component.
-//------------------------------------------------------------------------------
+// Example Sauce component. Delete before starting your project.
+//==============================================================================
 
 .sauce {
   text-align: center;
-  font-family: "Lato", sans-serif;
-  margin: 100px 0;
-
-  h1 {
-    @include replace-text-with-dimensions("sauce.png");
-    margin: 0 auto;
-  }
-  p {
-    font-weight: 300;
-    font-size: 2.2em;
-    color: #777;
-    margin-top: 50px;
-  }
+  margin: 10rem 0;
+}
+.sauce__heading {
+  background-image: image-url("sauce.png");
+  text-indent: -9999px;
+  display: block;
+  width: 417px;
+  height: 73px;
+  margin: 0 auto;
+}
+.sauce__message {
+  font-weight: 100;
+  font-size: 2.2rem;
+  color: #777;
+  margin-top: 5rem;
 }
