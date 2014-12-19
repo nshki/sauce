@@ -2,7 +2,7 @@
 
 ## Overview
 
-Vanilla [Middleman](http://middlemanapp.com/) template designed to minimize configuration time and get you writing code right away. Sauce uses [Haml](http://haml.info/) for markup, [Sass](http://sass-lang.com/) & [Autoprefixer](https://github.com/postcss/autoprefixer) for stylesheets, and [CoffeeScript](http://coffeescript.org/) for scripts. It also ships with the handy Middleman extensions `middleman-livereload` and `middleman-gh-pages`.
+Vanilla [Middleman](http://middlemanapp.com/) template designed to minimize configuration time and get you writing code right away. Sauce uses [Haml](http://haml.info/) for markup, [Sass](http://sass-lang.com/) & [Autoprefixer](https://github.com/postcss/autoprefixer) for stylesheets, and [CoffeeScript](http://coffeescript.org/) for scripts. It also ships with the handy Middleman extensions [middleman-livereload](https://github.com/middleman/middleman-livereload) and [middleman-gh-pages](https://github.com/neo/middleman-gh-pages).
 
 Stylesheet and script architecture is designed with the idea of components in mind -- independent, self-contained files designed for a specific purpose.
 
